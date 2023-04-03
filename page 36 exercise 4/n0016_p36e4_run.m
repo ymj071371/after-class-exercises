@@ -8,13 +8,13 @@ for m=1:1:4
     hold on;
     plot(numOwl(m,:));
     hold off;
-    legend('老鼠的数量','斑点猫头鹰的数量');
+    legend('Number of rats','Number of spotted owls');
     grid on;
     picName=strcat('p36e4 situation ',num2str(m),'.pdf');
     figName=strcat('p36e4 situation ',num2str(m));
-    title(figName,'FontName','宋体','FontSize',15);
-    xlabel('n段时间','FontName','宋体','FontSize',15);
-    ylabel('种群数量','FontName','宋体','FontSize',15);
+    title(figName,'FontName');
+    xlabel('Time');
+    ylabel('Population size');
     hold off;
     exportgraphics(gcf,picName,'Resolution',300);
 end

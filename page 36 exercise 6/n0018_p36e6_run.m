@@ -9,12 +9,12 @@ for m=1:1:4
     plot(quantity(m,:));
     hold off;
     grid on;
-    legend('价格','数量');
+    legend('Price','Quantity');
     picName=strcat('p36e6 situation ',num2str(m),'.pdf');
     figName=strcat('p36e6 situation ',num2str(m));
-    title(figName,'FontName','宋体','FontSize',15);
-    xlabel('n段时间','FontName','宋体','FontSize',15);
-    ylabel('价格 数量','FontName','宋体','FontSize',15);
+    title(figName);
+    xlabel('Time');
+    ylabel('Price and quantity');
     hold off;
     exportgraphics(gcf,picName,'Resolution',300);
 end

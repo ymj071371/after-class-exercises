@@ -11,9 +11,9 @@ for m=1:1:5
     grid on;
     picName=strcat('p23e3 (',num2str(m),').pdf');
     figName=strcat('p23e3 (',num2str(m),')');
-    title(figName,'FontName','宋体','FontSize',20);
-    xlabel('n','FontName','宋体','FontSize',20);
-    ylabel('a_n','FontName','Times New Roman','FontSize',20);
+    title(figName);
+    xlabel('n');
+    ylabel('a_n');
     set(gca,'xticklabel',get(gca,'xtick'),'yticklabel',get(gca,'ytick'));
     exportgraphics(gcf,picName,'Resolution',300);
 end

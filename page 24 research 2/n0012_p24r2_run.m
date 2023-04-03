@@ -12,9 +12,9 @@ for i=1:1:6
     grid on;
     picName=strcat('p24r2 situation ',num2str(i),'.pdf');
     figName=strcat('p24r2 situation ',num2str(i));
-    title(figName,'FontName','宋体','FontSize',20);
-    xlabel('年份','FontName','宋体','FontSize',20);
-    ylabel('鲸鱼数量','FontName','宋体','FontSize',20);
+    title(figName);
+    xlabel('Years');
+    ylabel('Number of whales');
     set(gca,'xticklabel',get(gca,'xtick'),'yticklabel',get(gca,'ytick'));
     exportgraphics(gcf,picName,'Resolution',300);
 end

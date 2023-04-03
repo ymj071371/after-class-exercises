@@ -10,15 +10,15 @@ figName=strcat('p25r4 The content of methylmercury in the human body');
 subplot(2,1,1);
 plot(Hg,'.');
 grid on;
-title(figName,'FontName','宋体','FontSize',10);
-xlabel('第n个70天','FontName','宋体','FontSize',10);
-ylabel('甲基汞含量（g）','FontName','宋体','FontSize',10);
+title(figName);
+xlabel('Every 70 days');
+ylabel('Methylmercury content (g)');
 
 subplot(2,1,2);
 plot(HgPerKilogram*1000,'.');
 grid on;
-title(figName,'FontName','宋体','FontSize',10);
-xlabel('第n个70天','FontName','宋体','FontSize',10);
-ylabel('甲基汞含量（g/kg）','FontName','宋体','FontSize',10);
+title(figName);
+xlabel('Every 70 days');
+ylabel('Methylmercury content (g/kg)');
 
 exportgraphics(gcf,picName,'Resolution',300);
